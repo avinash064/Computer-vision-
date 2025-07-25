@@ -1,0 +1,100 @@
+
+- Embedding size: 4096
+- Distance metric: L1
+- Final output: Binary similarity score
+
+**Architecture Diagram**  
+![Siamese Architecture](images/page_4.png)
+
+---
+
+## 🧪 Training & Evaluation
+
+- Loss: Binary Cross-Entropy
+- Optimizer: Adam
+- Evaluation Metrics: Accuracy, Precision, Recall
+- Checkpoints and validation split used
+
+**Training Metrics**  
+![Training Graphs](images/page_5.png)
+
+---
+
+## 🧾 DeepFace Integration
+
+- Used `DeepFace.verify()` to compare facial pairs
+- Preprocessed input images
+- Set similarity threshold for match/non-match
+
+**Verification Sample**  
+![DeepFace Verification](images/page_6.png)
+
+---
+
+## 📈 Results & Metrics
+
+| Metric     | Value  |
+|------------|--------|
+| Accuracy   | ~99%   |
+| Precision  | ~100%  |
+| Recall     | ~99.5% |
+| DeepFace Verification | High Confidence |
+
+---
+
+## 📸 Visualizations
+
+| Type            | Image |
+|-----------------|-------|
+| Matched Faces   | `images/match_sample.png` |
+| Mismatched Faces| `images/mismatch_sample.png` |
+| PCA Plot        | `images/pca_plot.png` |
+| Embedding Space | `images/embedding_space.png` |
+
+---
+
+## 🚀 Future Work
+
+- 🎭 Emotion & Attribute Recognition
+- 📐 Pose & Occlusion Handling
+- 📱 Mobile Deployment & Real-Time Verification
+- ⚖️ Bias Mitigation & Privacy Compliance
+
+---
+
+## 🛠️ CI/CD Workflow (GitHub Actions)
+
+This project uses GitHub Actions for automated testing and CI/CD.
+
+**Example Workflow (in `.github/workflows/python-app.yml`):**
+
+```yaml
+name: Python Application
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.8'
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+
+    - name: Run tests
+      run: |
+        pytest tests/
