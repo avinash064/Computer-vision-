@@ -3,7 +3,7 @@
 A Computer Vision project by **Avinash Kumar Kashyap (Roll No: 21064)**  
 This project presents a hybrid facial recognition system combining deep learning (Siamese Network + FaceNet) and classical eigenface analysis (PCA), enhanced by DeepFace for real-world identity verification.
 
-![Banner](page_1.png)
+![Banner](image/page_1.png)
 
 ---
 
@@ -53,7 +53,7 @@ Facial recognition is key in modern authentication systems. By combining the cla
 - Augmentation: Brightness, Contrast, Flip
 
 **Workflow Diagram**  
-![Dataset Workflow](page_2.png)
+![Dataset Workflow](image/page_2.png)
 
 ---
 
@@ -64,7 +64,7 @@ Facial recognition is key in modern authentication systems. By combining the cla
 - Eigenfaces used as compact input to the deep model
 
 **Eigenface Output**  
-![Eigenfaces](page_3.png)
+![Eigenfaces](image/page_3.png)
 
 ---
 
