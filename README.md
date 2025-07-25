@@ -53,7 +53,7 @@ Facial recognition is key in modern authentication systems. By combining the cla
 - Augmentation: Brightness, Contrast, Flip
 
 **Workflow Diagram**  
-![Dataset Workflow](images/page_2.png)
+![Dataset Workflow](page_2.png)
 
 ---
 
@@ -64,7 +64,7 @@ Facial recognition is key in modern authentication systems. By combining the cla
 - Eigenfaces used as compact input to the deep model
 
 **Eigenface Output**  
-![Eigenfaces](images/page_3.png)
+![Eigenfaces](page_3.png)
 
 ---
 
