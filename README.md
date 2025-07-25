@@ -3,7 +3,7 @@
 A Computer Vision project by **Avinash Kumar Kashyap (Roll No: 21064)**  
 This project presents a hybrid facial recognition system combining deep learning (Siamese Network + FaceNet) and classical eigenface analysis (PCA), enhanced by DeepFace for real-world identity verification.
 
-![Banner](images/page_1.png)
+![Banner](page_1.png)
 
 ---
 
